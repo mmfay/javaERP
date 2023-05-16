@@ -1,5 +1,5 @@
 # Files to ignore
 *.DS_Store
 # Directories to ignore
-.gradle/*
-build/*
+*/.gradle/*
+*/build/*
