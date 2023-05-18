@@ -7,7 +7,7 @@ public class Client {
     
     public static void main(String[] args) {
         try {
-            socket = new Socket("localhost",8080);
+            socket = new Socket("localhost",9000);
         } catch(Exception e) {
             System.out.println(e);
         }
