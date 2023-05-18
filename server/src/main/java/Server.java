@@ -17,20 +17,24 @@ public class Server {
 
     public static void connections() {
 
-        while(true) {
             try {
-                ServerSocket ss = new ServerSocket(8000);
-                Socket s = ss.accept();
+                ServerSocket ss = new ServerSocket(9000);
 
-                // send to thread
-                clientThread = new ClientThread(s);
-                Thread thread = new Thread(clientThread);
-                thread.start();
+                while (true) {
+                    Socket s = ss.accept();
+
+                    // send to thread
+                    clientThread = new ClientThread(s);
+                    Thread thread = new Thread(clientThread);
+                    thread.start();
+                }
+                
             } catch(Exception e) {
                 //create stacktrace infobox
                 System.out.println(e);
             }
-        }
+
+        
 
     }
 
