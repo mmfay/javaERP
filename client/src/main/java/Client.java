@@ -18,6 +18,7 @@ public class Client {
         mainFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         
         mainFrame.setVisible(true);
+        mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
 
